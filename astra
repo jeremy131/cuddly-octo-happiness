@@ -1,0 +1,90 @@
+--[=[ 
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.   
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b  
+88      88    88    88            odD'      88      88    88 88ooo88  
+88  ooo 88    88    88          .88'        88      88    88 88~~~88  
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88  
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=] 
+ 
+-- Instances: 125 | Scripts: 17 | Modules: 0 
+local G2L = {}; 
+ 
+-- StarterGui.Gui 
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")); 
+G2L["1"]["IgnoreGuiInset"] = true; 
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets; 
+G2L["1"]["Name"] = [[Gui]]; 
+G2L["1"]["ResetOnSpawn"] = false; 
+G2L["1"]["ClipToDeviceSafeArea"] = false; 
+ 
+-- StarterGui.Gui.Main 
+G2L["2"] = Instance.new("Folder", G2L["1"]); 
+G2L["2"]["Name"] = [[Main]]; 
+ 
+-- StarterGui.Gui.Main.Tabs 
+G2L["3"] = Instance.new("Frame", G2L["2"]); 
+G2L["3"]["BorderSizePixel"] = 0; 
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13); 
+G2L["3"]["BackgroundTransparency"] = 0.30000001192092896; 
+G2L["3"]["Size"] = UDim2.new(0, 979, 0, 412); 
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0); 
+G2L["3"]["Position"] = UDim2.new(-0.05886905640363693, 0, 0, 0); 
+G2L["3"]["Visible"] = false; 
+G2L["3"]["Name"] = [[Tabs]]; 
+ 
+-- StarterGui.Gui.Main.Tabs.UICorner 
+G2L["4"] = Instance.new("UICorner", G2L["3"]); 
+G2L["4"]["CornerRadius"] = UDim.new(0, 15); 
+ 
+-- StarterGui.Gui.Main.Tabs.Home Display 
+G2L["5"] = Instance.new("Frame", G2L["3"]); 
+G2L["5"]["BorderSizePixel"] = 0; 
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26); 
+G2L["5"]["BackgroundTransparency"] = 1; 
+G2L["5"]["Size"] = UDim2.new(0, 26, 0, 26); 
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0); 
+G2L["5"]["Position"] = UDim2.new(0.18481367826461792, 0, 0.17889778316020966, 0); 
+G2L["5"]["Name"] = [[Home Display]]; 
+ 
+-- StarterGui.Gui.Main.Tabs.Home Display.UICorner 
+G2L["6"] = Instance.new("UICorner", G2L["5"]); 
+G2L["6"]["CornerRadius"] = UDim.new(0, 50); 
+ 
+-- StarterGui.Gui.Main.Tabs.Home Display.Home Btn 
+G2L["7"] = Instance.new("TextButton", G2L["5"]); 
+G2L["7"]["BorderSizePixel"] = 0; 
+G2L["7"]["TextTransparency"] = 1; 
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255); 
+G2L["7"]["TextSize"] = 14; 
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal); 
+G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0); 
+G2L["7"]["Size"] = UDim2.new(0, 30, 0, 28); 
+G2L["7"]["Name"] = [[Home Btn]]; 
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0); 
+G2L["7"]["Text"] = [[Home]]; 
+G2L["7"]["Position"] = UDim2.new(-4.910268306732178, 0, 0.683915376663208, 0); 
+G2L["7"]["BackgroundTransparency"] = 1; 
+ 
+-- StarterGui.Gui.Main.Tabs.Home Display.Home Btn.Home Tab 
+G2L["8"] = Instance.new("Frame", G2L["7"]); 
+G2L["8"]["BorderSizePixel"] = 0; 
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(13, 13, 13); 
+G2L["8"]["BackgroundTransparency"] = 0.8999999761581421; 
+G2L["8"]["Size"] = UDim2.new(0, 794, 0, 412); 
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0); 
+G2L["8"]["Position"] = UDim2.new(1.8872534036636353, 0, -3.0482356548309326, 0); 
+G2L["8"]["Name"] = [[Home Tab]]; 
+ 
+-- StarterGui.Gui.Main.Tabs.Home Display.Home Btn.Home Tab.UICorner 
+G2L["9"] = Instance.new("UICorner", G2L["8"]); 
+G2L["9"]["CornerRadius"] = UDim.new(0, 30); 
+ 
+-- StarterGui.Gui.Main.Tabs.Home Display.Home Btn.Home Tab.Welcome Tab 
+G2L["a"] = Instance.new("Frame", G2L["8"]); 
+G2L["a"]["BorderSizePixel"] = 0; 
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37); 
+G2L["a"]["BackgroundTransparency"] = 0.8999999761581421; 
+G2L["a"]["Size"] = UDim2.new(0, 224, 0, 100); 
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0); 
+G2L["a"]["Position"] =
